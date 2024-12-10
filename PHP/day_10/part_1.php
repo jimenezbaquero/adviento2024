@@ -55,7 +55,6 @@ function findPaths($value,$paths, $map) {
         $newPos = $map[$path[0] + $direction[0]][$path[1] + $direction[1]];
         if ($newPos != '.' && $newPos - $value == 1) {
           $response[] = [$path[0] + $direction[0], $path[1] + $direction[1]];
-//          echo 'desde '.implode('-',$path).' vamos a '.implode('-',[$path[0] + $direction[0], $path[1] + $direction[1]]).PHP_EOL;
         }
       }
     }
