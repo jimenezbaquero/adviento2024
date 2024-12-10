@@ -34,7 +34,7 @@ foreach ($chain as $key =>$value){
     continue;
   }
   if($value != $prev){
-    $newChain[$totalLength] = ['value' => $prev,'length' => $length,'moved' => false];
+    $newChain[$totalLength] = ['value' => $prev,'length' => $length];
     if($prev == '.'){
       $spaces[$totalLength] = $length;
     }
@@ -45,7 +45,7 @@ foreach ($chain as $key =>$value){
   }
   $prev = $value;
 }
-$newChain[$totalLength] = ['value' => $prev,'length' => $length,'moved' => false];
+$newChain[$totalLength] = ['value' => $prev,'length' => $length];
 
 $copyChain = $newChain;
 krsort($copyChain);
