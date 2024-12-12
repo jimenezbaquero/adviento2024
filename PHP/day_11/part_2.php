@@ -12,7 +12,7 @@ foreach ($data as $value) {
   $total += calculateStones($value, $times);
 }
 
-echo 'Solucion '.$total;
+echo 'Solution '.$total;
 
 function calculateStones($stone, $level){
   static $processed = [];
