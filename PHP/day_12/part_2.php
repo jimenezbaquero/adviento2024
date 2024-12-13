@@ -9,7 +9,6 @@ $directions = [[1,0],[-1,0],[0,1],[0,-1]];
 $map = [];
 $processed = [];
 $regions = [];
-$pendingProcess = [];
 
 foreach ($data as $i=>$line) {
   foreach (str_split($line) as $j=>$value) {
