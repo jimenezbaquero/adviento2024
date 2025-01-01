@@ -36,3 +36,10 @@ function paint($array ,$key = null){
     }
     echo '---------------'.PHP_EOL;
 }
+
+function paintFull($array){
+  foreach ($array as $i=>$row){
+    echo implode('',$row).PHP_EOL;
+  }
+  echo '---------------'.PHP_EOL;
+}
