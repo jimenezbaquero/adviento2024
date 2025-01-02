@@ -6,13 +6,6 @@ $data = loadFile('input.txt');
 //$data = loadFile('test.txt');
 $total = 0;
 $map = [];
-$directions = [
-  'E' => [0,1],
-  'W' => [0,-1],
-  'N' => [-1,0],
-  'S' => [1,0],
-];
-$direction = $directions['E'];
 $positionStart = [];
 $positionEnd = [];
 
